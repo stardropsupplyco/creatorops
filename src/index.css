@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FAFAF7;
+    color: #1A1A2E;
+    font-family: 'DM Sans', sans-serif;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white border border-border rounded-2xl p-4 shadow-sm;
+  }
+  .btn-primary {
+    @apply bg-ink text-cream font-semibold px-4 py-2.5 rounded-xl hover:bg-ink-light transition-colors text-sm;
+  }
+  .btn-gold {
+    @apply bg-gold text-white font-semibold px-4 py-2.5 rounded-xl hover:bg-gold-light transition-colors text-sm;
+  }
+  .btn-ghost {
+    @apply border border-border text-ink px-4 py-2.5 rounded-xl hover:bg-surface transition-colors text-sm;
+  }
+  .input {
+    @apply bg-white border border-border rounded-xl px-3 py-2.5 text-ink placeholder-muted focus:outline-none focus:border-gold text-sm w-full;
+  }
+  .label {
+    @apply text-xs text-muted uppercase tracking-wider font-semibold;
+  }
+  .tab-active {
+    @apply bg-ink text-cream;
+  }
+  .tab-inactive {
+    @apply text-muted hover:text-ink hover:bg-surface;
+  }
+}
