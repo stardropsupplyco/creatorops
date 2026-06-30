@@ -31,9 +31,8 @@ export default function Landing({ onEnter }) {
     <div className="min-h-screen bg-surface">
       {/* Nav */}
       <nav className="bg-white border-b border-border px-5 py-4 flex items-center justify-between sticky top-0 z-50" role="navigation" aria-label="Main navigation">
-        <div className="flex items-center gap-2">
-          <span className="font-display font-black text-2xl leading-none text-ink" style={{fontVariant: 'small-caps'}}>CO</span>
-          <span className="font-display font-bold text-ink">Creator<span className="text-gold">Ops</span></span>
+        <div className="flex items-center">
+          <img src="/images/logo-icon.png" alt="CreatorOps" className="h-7 w-auto" />
         </div>
         <div className="flex items-center gap-3">
           <a href="#pricing" className="text-xs text-muted hover:text-ink transition-colors hidden sm:block">Pricing</a>
@@ -44,16 +43,11 @@ export default function Landing({ onEnter }) {
 
       {/* Hero */}
       <section className="px-5 pt-16 pb-8 text-center max-w-2xl mx-auto" aria-label="Hero">
-        <div className="inline-flex flex-col items-center mb-6">
-          <span className="font-display font-black text-7xl leading-none text-ink mb-2" style={{fontVariant: 'small-caps'}}>CO</span>
-          <span className="font-display font-bold text-2xl text-ink">Creator<span className="text-gold">Ops</span></span>
-          <div className="flex items-center gap-3 mt-3 mb-2">
-            <div className="w-12 h-px bg-gold" />
-            <div className="w-1.5 h-1.5 rotate-45 bg-gold" />
-            <div className="w-12 h-px bg-gold" />
-          </div>
-          <p className="text-sm text-ink font-medium tracking-wide">Plan. Write. Repurpose. Track.</p>
-        </div>
+        <img
+          src="/images/logo-lockup.png"
+          alt="CreatorOps — Plan. Write. Repurpose. Track."
+          className="w-full max-w-sm mx-auto mb-6"
+        />
 
         <div className="inline-flex items-center gap-1.5 bg-gold/10 border border-gold/20 rounded-full px-3 py-1 mb-6">
           <Star size={10} className="text-gold fill-gold" aria-hidden="true" />
