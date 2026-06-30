@@ -8,10 +8,7 @@ export default function Layout({ tabs, activeTab, setActiveTab, plan, user, chil
     <div className="min-h-screen bg-surface flex flex-col">
       {/* Header */}
       <header className="bg-white border-b border-border px-4 py-3 flex items-center justify-between sticky top-0 z-50">
-        <div className="flex items-center gap-1.5">
-          <span className="font-display font-black text-lg leading-none text-ink" style={{fontVariant: 'small-caps'}}>CO</span>
-          <span className="font-display font-bold text-ink text-base">Creator<span className="text-gold">Ops</span></span>
-        </div>
+        <img src="/images/logo-icon.png" alt="CreatorOps" className="h-6 w-auto" />
         <div className="flex items-center gap-3">
           {plan === 'pro' ? (
             <span className="flex items-center gap-1 text-xs text-gold font-semibold">
